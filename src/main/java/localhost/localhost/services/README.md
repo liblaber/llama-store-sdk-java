@@ -79,7 +79,7 @@ public class Main {
   public static void main(String[] args) {
     Llamastore client = new Llamastore(System.getenv("LLAMASTORE_BEARER_TOKEN"));
     try {
-      Object response = client.llamaPictureService.createLlamaPicture(727836013);
+      Object response = client.llamaPictureService.createLlamaPicture(854456314);
       System.out.println(response);
     } catch (ApiException e) {
       e.printStackTrace();
@@ -116,7 +116,7 @@ public class Main {
   public static void main(String[] args) {
     Llamastore client = new Llamastore(System.getenv("LLAMASTORE_BEARER_TOKEN"));
     try {
-      Object response = client.llamaPictureService.getLlamaPictureByLlamaId(963652236);
+      Object response = client.llamaPictureService.getLlamaPictureByLlamaId(742625233);
       System.out.println(response);
     } catch (ApiException e) {
       e.printStackTrace();
@@ -153,7 +153,7 @@ public class Main {
   public static void main(String[] args) {
     Llamastore client = new Llamastore(System.getenv("LLAMASTORE_BEARER_TOKEN"));
     try {
-      Object response = client.llamaPictureService.deleteLlamaPicture(342678448);
+      Object response = client.llamaPictureService.deleteLlamaPicture(788921957);
       System.out.println(response);
     } catch (ApiException e) {
       e.printStackTrace();
@@ -191,7 +191,7 @@ public class Main {
   public static void main(String[] args) {
     Llamastore client = new Llamastore(System.getenv("LLAMASTORE_BEARER_TOKEN"));
     try {
-      Object response = client.llamaPictureService.updateLlamaPicture(226097017);
+      Object response = client.llamaPictureService.updateLlamaPicture(885481923);
       System.out.println(response);
     } catch (ApiException e) {
       e.printStackTrace();
@@ -303,7 +303,7 @@ public class Main {
   public static void main(String[] args) {
     Llamastore client = new Llamastore(System.getenv("LLAMASTORE_BEARER_TOKEN"));
     try {
-      Object response = client.llamaService.getLlamaById(612308085);
+      Object response = client.llamaService.getLlamaById(665251483);
       System.out.println(response);
     } catch (ApiException e) {
       e.printStackTrace();
@@ -340,7 +340,7 @@ public class Main {
   public static void main(String[] args) {
     Llamastore client = new Llamastore(System.getenv("LLAMASTORE_BEARER_TOKEN"));
     try {
-      Object response = client.llamaService.deleteLlama(697578534);
+      Object response = client.llamaService.deleteLlama(293334510);
       System.out.println(response);
     } catch (ApiException e) {
       e.printStackTrace();
@@ -378,7 +378,7 @@ public class Main {
   public static void main(String[] args) {
     Llamastore client = new Llamastore(System.getenv("LLAMASTORE_BEARER_TOKEN"));
     try {
-      Object response = client.llamaService.updateLlama(178887299);
+      Object response = client.llamaService.updateLlama(250612061);
       System.out.println(response);
     } catch (ApiException e) {
       e.printStackTrace();
