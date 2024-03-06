@@ -1,12 +1,12 @@
 
 
-# Llamastore Java SDK 0.0.1
+# Llamastore Java SDK 0.0.3
 A Java SDK for Llamastore. 
 
 The llama store API! Get details on all your favorite llamas.  ## To use this API  - You will need to register a user, once done you can request an API token. - You can then use your API token to get details about the llamas.  ## User registration  To register a user, send a POST request to `/user` with the following body:      ```json {      email :  <your email> ,      password :  <your password>  } ``` This API has a maximum of 1000 current users. Once this is exceeded, older users will be deleted. If your user is deleted, you will need to register again. ## Get an API token  To get an API token, send a POST request to `/token` with the following body:      ```json {      email :  <your email> ,      password :  <your password>  } ```  This will return a token that you can use to authenticate with the API:  ```json {    access_token :  <your new token> ,    token_type :  bearer  } ```  ## Use the API token  To use the API token, add it to the `Authorization` header of your request:  ``` Authorization: Bearer <your token> ```   
 
-- API version: 0.0.1
-- SDK version: 0.0.1
+- API version: 0.0.3
+- SDK version: 0.0.3
 
 ## Table of Contents
 - [Requirements](#requirements)
@@ -32,7 +32,7 @@ If you use Maven, place the following within the <dependencies> tag in your pom.
 
 ```XML
 <dependency>
-  <groupId>localhost.localhost</groupId>
+  <groupId>com.liblab</groupId>
   <artifactId>llamastore</artifactId>
   <version>0.0.1</version>
 </dependency>
@@ -41,7 +41,7 @@ If you use Maven, place the following within the <dependencies> tag in your pom.
 If you use Gradle, paste the next line inside the dependencies block of your build.gradle file:
 
 ```Gradle
-implementation group: "localhost.localhost", name: "Llamastore", version: "0.0.1"
+implementation group: "com.liblab", name: "Llamastore", version: "0.0.1"
 ```
 
 ## Authentication
@@ -63,19 +63,19 @@ sdk.setBearerToken("YOUR_BEARER_TOKEN");
 
 ## API Endpoint Services
 
-All URIs are relative to http://localhost:8000.
+All URIs are relative to http://localhost:8080.
 
 Click the service name for a full list of the service methods.
 
 | Service |
 | :------ |
-|[LlamaPictureService](src/main/java/localhost/localhost/services/README.md#llamapictureservice)|
-|[LlamaService](src/main/java/localhost/localhost/services/README.md#llamaservice)|
-|[TokenService](src/main/java/localhost/localhost/services/README.md#tokenservice)|
-|[UserService](src/main/java/localhost/localhost/services/README.md#userservice)|
+|[LlamaPictureService](src/main/java/com/liblab/services/README.md#llamapictureservice)|
+|[LlamaService](src/main/java/com/liblab/services/README.md#llamaservice)|
+|[TokenService](src/main/java/com/liblab/services/README.md#tokenservice)|
+|[UserService](src/main/java/com/liblab/services/README.md#userservice)|
 
 ## API Models
-[A list documenting all API models for this SDK](src/main/java/localhost/localhost//models/README.md#llamastore-models).
+[A list documenting all API models for this SDK](src/main/java/com/liblab//models/README.md#llamastore-models).
 
 ## Testing
 
@@ -90,16 +90,16 @@ mvn clean test
 Your SDK may require some configuration changes.
 
 
-This API is configured to use a security token for authorization. You should edit `examples/src/main/java/localhost/localhost/examples/Main.java` and paste your own token in place of `LLAMASTORE_BEARER_TOKEN`.
+This API is configured to use a security token for authorization. You should edit `examples/src/main/java/com/liblab/examples/Main.java` and paste your own token in place of `LLAMASTORE_BEARER_TOKEN`.
 
 
 ## Sample Usage
 
 ```Java
-package localhost.localhost.examples;
+package com.liblab.examples;
 
-import localhost.localhost.exceptions.ApiException;
-import localhost.localhost.Llamastore;
+import com.liblab.exceptions.ApiException;
+import com.liblab.Llamastore;
 
 public class Main {
 
@@ -116,9 +116,9 @@ public class Main {
 
 ```
 
-Inside this directory is `examples/src/main/java/localhost/localhost/examples/Main.java`. It's a simple, "hello, world" level program to demonstate this SDK. Run `install.sh` to prepare the SDK for use. 
+Inside this directory is `examples/src/main/java/com/liblab/examples/Main.java`. It's a simple, "hello, world" level program to demonstate this SDK. Run `install.sh` to prepare the SDK for use. 
 
-To see what other functions this SDK is capable of, look inside `src/main/java/localhost/localhost/http/*Client.java`.
+To see what other functions this SDK is capable of, look inside `src/main/java/com/liblab/http/*Client.java`.
 
 ## License
 
