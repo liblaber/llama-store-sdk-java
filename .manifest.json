@@ -1,0 +1,140 @@
+{
+  "liblabVersion": "1.1.39",
+  "date": "2024-03-06T23:26:33.966Z",
+  "config": {
+    "authentication": {
+      "access": {
+        "prefix": "Bearer"
+      }
+    },
+    "deliveryType": "zip",
+    "languages": [
+      "java"
+    ],
+    "inputFileName": "/tmp/resources/spec/open-api-spec.json",
+    "environmentVariables": [],
+    "fileOutput": "/tmp",
+    "tempDir": "/tmp/liblab-codegen-1.1.39-7CBMtW",
+    "inferServiceNames": false,
+    "httpLibrary": {
+      "name": "axios",
+      "packages": {
+        "axios": "^1.0.0"
+      },
+      "languages": [
+        "javascript",
+        "typescript"
+      ]
+    },
+    "auth": [
+      "bearer"
+    ],
+    "privateRepo": false,
+    "githubRef": "",
+    "baseUrl": "http://localhost:8080",
+    "sdkName": "Llamastore",
+    "sdkVersion": "0.0.3",
+    "retry": {
+      "enabled": true,
+      "maxAttempts": 3,
+      "retryDelay": 150
+    },
+    "customQueries": {
+      "paths": [],
+      "rawQueries": [],
+      "queriesData": []
+    },
+    "generateEnv": true,
+    "license": {
+      "type": "MIT",
+      "name": "MIT",
+      "url": "https://opensource.org/licenses/MIT"
+    },
+    "alwaysInitializeOptionals": false,
+    "groupId": "com.liblab",
+    "environments": [],
+    "reservedKeywords": {},
+    "deliveryMethods": [],
+    "bundle": false,
+    "exportClassDefault": false,
+    "responseHeaders": false,
+    "renameIllegalModelProperties": false,
+    "devContainer": true,
+    "strictVersion": false,
+    "authors": [],
+    "classifiers": [],
+    "projectUrls": {},
+    "homepage": "",
+    "enforceRequestValidation": false,
+    "denoteCommon": false,
+    "includeOptionalSnippetParameters": true,
+    "hooks": {
+      "enabled": false,
+      "sourceDir": ""
+    },
+    "spec": {
+      "type": "openapi",
+      "version": "3.1"
+    },
+    "usesFormData": false
+  },
+  "files": [
+    ".devcontainer/devcontainer.json",
+    ".env.example",
+    ".gitignore",
+    "LICENSE",
+    "README.md",
+    "examples/pom.xml",
+    "examples/src/main/java/com/localhost/examples/Main.java",
+    "install.sh",
+    "pom.xml",
+    "src/main/java/com/liblab/Configuration.java",
+    "src/main/java/com/liblab/Environment.java",
+    "src/main/java/com/liblab/Llamastore.java",
+    "src/main/java/com/liblab/exceptions/ApiException.java",
+    "src/main/java/com/liblab/exceptions/ArgumentCannotBeNullException.java",
+    "src/main/java/com/liblab/hooks/CustomHook.java",
+    "src/main/java/com/liblab/hooks/model/Hook.java",
+    "src/main/java/com/liblab/hooks/model/Request.java",
+    "src/main/java/com/liblab/hooks/model/Response.java",
+    "src/main/java/com/liblab/http/LlamaClient.java",
+    "src/main/java/com/liblab/http/LlamaPictureClient.java",
+    "src/main/java/com/liblab/http/ModelConverter.java",
+    "src/main/java/com/liblab/http/ResponseWithHeaders.java",
+    "src/main/java/com/liblab/http/TokenClient.java",
+    "src/main/java/com/liblab/http/UserClient.java",
+    "src/main/java/com/liblab/http/interceptors/BearerTokenInterceptor.java",
+    "src/main/java/com/liblab/http/interceptors/DefaultHeadersInterceptor.java",
+    "src/main/java/com/liblab/http/interceptors/RetryInterceptor.java",
+    "src/main/java/com/liblab/http/util/HttpArgumentConverter.java",
+    "src/main/java/com/liblab/http/util/HttpHeaders.java",
+    "src/main/java/com/liblab/http/util/HttpUrl.java",
+    "src/main/java/com/liblab/models/ApiToken.java",
+    "src/main/java/com/liblab/models/BaseModel.java",
+    "src/main/java/com/liblab/models/CreateApiTokenRequest.java",
+    "src/main/java/com/liblab/models/CreateLlamaRequest.java",
+    "src/main/java/com/liblab/models/Llama.java",
+    "src/main/java/com/liblab/models/LlamaColor.java",
+    "src/main/java/com/liblab/models/LlamaId.java",
+    "src/main/java/com/liblab/models/README.md",
+    "src/main/java/com/liblab/models/RegisterUserRequest.java",
+    "src/main/java/com/liblab/models/UpdateLlamaRequest.java",
+    "src/main/java/com/liblab/models/User.java",
+    "src/main/java/com/liblab/services/BaseService.java",
+    "src/main/java/com/liblab/services/LlamaPictureService.java",
+    "src/main/java/com/liblab/services/LlamaService.java",
+    "src/main/java/com/liblab/services/README.md",
+    "src/main/java/com/liblab/services/TokenService.java",
+    "src/main/java/com/liblab/services/UserService.java",
+    "src/test/java/com/liblab/TestTest.java",
+    "src/test/java/com/liblab/helpers/TestModel.java",
+    "src/test/java/com/liblab/http/ModelConverterTest.java",
+    "src/test/java/com/liblab/models/ModelOneOfTests.java",
+    "src/test/java/com/liblab/services/BaseServiceTest.java",
+    "src/test/java/com/liblab/services/LlamaPictureServiceTest.java",
+    "src/test/java/com/liblab/services/LlamaServiceTest.java",
+    "src/test/java/com/liblab/services/TokenServiceTest.java",
+    "src/test/java/com/liblab/services/UserServiceTest.java",
+    "src/test/java/utils/ArrayUtils.java"
+  ]
+}
