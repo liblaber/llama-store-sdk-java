@@ -14,7 +14,7 @@
   "customizations": {
     "codespaces": {
       "openFiles": [
-        "examples/src/main/java/localhost/localhost/examples/Main.java",
+        "examples/src/main/java/com/liblab/examples/Main.java",
         "README.md"
       ]
     }
