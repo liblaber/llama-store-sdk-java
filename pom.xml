@@ -5,13 +5,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>
-        localhost.localhost
+        com.liblab
     </groupId>
     <artifactId>
         llamastore
     </artifactId>
     <version>
-        0.0.1
+        0.0.3
     </version>
 
     <!-- See https://central.sonatype.org/publish/requirements/#project-name-description-and-url -->
@@ -62,7 +62,7 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.26</version>
+            <version>1.18.30</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
